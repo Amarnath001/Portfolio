@@ -5,3 +5,27 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Pure CSS animated starfield */
+.starfield-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: star-move linear infinite;
+}
+@keyframes star-move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+.z-above-bg { z-index: 10; position: relative; }
