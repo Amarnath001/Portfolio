@@ -2,9 +2,8 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   const stats = [
-    { label: "Years Experience", value: "3+" },
-    { label: "Projects Completed", value: "20+" },
-    { label: "Happy Clients", value: "15+" }
+    { label: "Years Experience", value: "2+" },
+    { label: "Projects Completed", value: "10+" }
   ];
 
   const skills = [
@@ -136,35 +135,6 @@ const About = () => {
               ))}
             </div>
           </motion.div>
-        </div>
-
-        {/* Timeline Section */}
-        <div className="mt-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Experience & Education Timeline</h3>
-          <div className="relative border-l-4 border-blue-500 pl-8">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="mb-12 relative">
-                <div className="absolute -left-5 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-800" />
-                <div>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <h4 className="text-xl font-bold text-white">{item.title}</h4>
-                      <div className="text-blue-300 font-semibold">{item.subtitle}</div>
-                      {item.location && <div className="text-gray-400 text-sm">{item.location}</div>}
-                    </div>
-                    <div className="text-gray-300 text-sm mt-2 md:mt-0">{item.date}</div>
-                  </div>
-                  {item.details.length > 0 && (
-                    <ul className="list-disc ml-6 mt-2 text-gray-300 space-y-1">
-                      {item.details.map((detail, i) => (
-                        <li key={i}>{detail}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

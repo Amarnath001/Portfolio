@@ -52,16 +52,18 @@ const projects = [
     demo: ''
   },
   {
-    title: 'CodeHS Assignments & Projects',
+    title: 'Logic Gate Simulator — CodeHS',
     date: '2025',
-    technologies: ['Java', 'AP CS', 'Algorithms'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     details: [
-      'A collection of Java assignments and projects completed for the CodeHS AP Computer Science curriculum.',
-      'Includes solutions to algorithmic challenges, OOP exercises, and interactive console programs.',
-      'Demonstrates foundational CS concepts and problem-solving skills.'
+      'An interactive educational game designed to teach K-12 students the fundamentals of Boolean logic through puzzle-based challenges.',
+      'Level-based challenges: AND, OR, and NOT gates with progressive difficulty.',
+      'Interactive grid for placing gates and wires, with color-coded visual feedback.',
+      'Progress tracking and step-by-step instructions for each level.',
+      'Originally built for Bool.com, adapted for CodeHS Summer 2025 Internship Challenge.'
     ],
-    github: 'https://github.com/Amarnath001/CodeHS',
-    demo: ''
+    github: 'https://github.com/Amarnath001/Logic_Gate_Simulator_CodeHS',
+    demo: 'https://www.loom.com/share/1cb9fb42b52a42afb60a5eba5a0e4ac4'
   }
 ];
 
