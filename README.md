@@ -24,6 +24,3 @@ Welcome to my interactive, game-themed developer portfolio! Designed and built u
 - TypeScript
 - Deployed on Vercel
 
----
-
-> Built with ❤️ by Amarnath Kaushik
