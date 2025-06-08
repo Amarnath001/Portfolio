@@ -27,12 +27,12 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setStatus({ submitting: false, submitted: true, error: false });
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        throw new Error('Form submission failed');
+      if (!response.ok) {
+        throw new Error('Failed to send message');
       }
+
+      setStatus({ submitting: false, submitted: true, error: false });
+      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       setStatus({ submitting: false, submitted: false, error: true });
     }
