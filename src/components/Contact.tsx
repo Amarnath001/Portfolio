@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
@@ -8,11 +8,16 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState({
-    submitting: false,
-    submitted: false,
-    error: false
-  });
+  const [status, setStatus] = useState({ submitting: false, submitted: false, error: false });
+
+  useEffect(() => {
+    if (status.submitted || status.error) {
+      const timer = setTimeout(() => {
+        setStatus({ submitting: false, submitted: false, error: false });
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status.submitted, status.error]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -166,12 +171,12 @@ const Contact = () => {
                     {status.submitting ? 'Sending...' : 'Send Message'}
                   </button>
                   {status.submitted && (
-                    <p className="text-green-500 text-center">
+                    <p className="text-green-400 text-center mt-4 animate-fade-in-out">
                       Thank you for your message! I'll get back to you soon.
                     </p>
                   )}
                   {status.error && (
-                    <p className="text-red-500 text-center">
+                    <p className="text-red-500 text-center mt-4 animate-fade-in-out">
                       Oops! Something went wrong. Please try again later.
                     </p>
                   )}
