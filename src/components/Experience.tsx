@@ -4,9 +4,26 @@ import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 const Education = () => {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of California, Riverside',
-      duration: '2021 - 2025',
+      degree: 'Master of Science in Computer Science',
+      school: 'Santa Clara University, California',
+      duration: '2024 - 2026',
+      gpa: '3.9/4.0',
+      relevantCourses: [
+        'Artificial Intelligence',
+        'Machine Learning',
+        'Deep Learning',
+        'Computer Vision',
+        'Natural Language Processing',
+        'Advanced Operating Systems',
+        'Algorithms',
+        'Human Computer Interaction',
+        'Computer Architecture',
+      ]
+    },
+    {
+      degree: 'Bachelor of Engineering in Computer Science',
+      school: 'BNM Institute of Technology, Bangalore',
+      duration: '2018 - 2022',
       gpa: '3.8/4.0',
       relevantCourses: [
         'Data Structures & Algorithms',

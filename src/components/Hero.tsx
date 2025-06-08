@@ -92,7 +92,7 @@ const Hero = dynamic(() => Promise.resolve(() => {
       </div>
 
       {/* Game-style buttons */}
-      <div className="flex space-x-4 mt-8 z-above-bg">
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 z-above-bg">
         <motion.div whileHover={{ scale: 1.08 }}>
           <a
             href="#about"
@@ -107,6 +107,15 @@ const Hero = dynamic(() => Promise.resolve(() => {
             className="px-8 py-3 bg-blue-700 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg text-white text-lg"
           >
             View Projects
+          </a>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.08 }}>
+          <a
+            href="/Amarnath_Kaushik_Resume.pdf"
+            download
+            className="px-8 py-3 bg-green-600 rounded-lg font-semibold hover:bg-green-700 transition shadow-lg text-white text-lg"
+          >
+            Download Resume
           </a>
         </motion.div>
       </div>
