@@ -56,29 +56,31 @@ const Education = () => {
         <div className="max-w-4xl mx-auto">
           {education.map((edu, index) => (
             <div key={index} className="bg-[#16213e] rounded-lg p-6 mb-6 shadow-lg border border-blue-500/20">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-xl font-bold text-blue-400 mb-2">{edu.degree}</h3>
-                <p className="text-gray-300 mb-2">{edu.school}</p>
-                <div className="flex justify-between text-gray-400 mb-4">
-                  <span>{edu.duration}</span>
-                  <span>GPA: {edu.gpa}</span>
-                </div>
-                <div className="mt-4">
-                  <h4 className="text-blue-300 font-semibold mb-2">Relevant Coursework:</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {edu.relevantCourses.map((course, i) => (
-                      <span key={i} className="text-gray-300 bg-blue-900/30 px-3 py-1 rounded-full text-sm">
-                        {course}
-                      </span>
-                    ))}
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">{edu.degree}</h3>
+                  <p className="text-gray-300 mb-2">{edu.school}</p>
+                  <div className="flex justify-between text-gray-400 mb-4">
+                    <span>{edu.duration}</span>
+                    <span>GPA: {edu.gpa}</span>
                   </div>
-                </div>
-              </motion.div>
+                  <div className="mt-4">
+                    <h4 className="text-blue-300 font-semibold mb-2">Relevant Coursework:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {edu.relevantCourses.map((course, i) => (
+                        <span key={i} className="text-gray-300 bg-blue-900/30 px-3 py-1 rounded-full text-sm">
+                          {course}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </div>
           ))}
         </div>
@@ -126,24 +128,26 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <div key={index} className="bg-[#16213e] rounded-lg p-6 mb-6 shadow-lg border border-blue-500/20">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-xl font-bold text-blue-400 mb-2">{exp.title}</h3>
-                <p className="text-gray-300 mb-2">{exp.company}</p>
-                <div className="flex justify-between text-gray-400 mb-4">
-                  <span>{exp.duration}</span>
-                  <span>{exp.location}</span>
-                </div>
-                <ul className="list-disc list-inside text-gray-300 space-y-2">
-                  {exp.description.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </motion.div>
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-bold text-blue-400 mb-2">{exp.title}</h3>
+                  <p className="text-gray-300 mb-2">{exp.company}</p>
+                  <div className="flex justify-between text-gray-400 mb-4">
+                    <span>{exp.duration}</span>
+                    <span>{exp.location}</span>
+                  </div>
+                  <ul className="list-disc list-inside text-gray-300 space-y-2">
+                    {exp.description.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </div>
             </div>
           ))}
         </div>
