@@ -1,26 +1,51 @@
-# 🕹️ Amarnath Kaushik's Game-Themed Portfolio
+# 🕹️ Amarnath Kaushik's Portfolio
 
-Welcome to my interactive, game-themed developer portfolio! Designed and built using **React**, **TailwindCSS**, and **Framer Motion**, this site showcases my skills, experience, and projects in a fun and immersive way.
+Welcome to my interactive developer portfolio! Built with **Next.js**, **TypeScript**, **TailwindCSS**, and **Framer Motion**, this site showcases my skills, experience, and projects in a modern and engaging way.
 
 ## 🚀 Features
 
-- 🎮 Game-inspired UI (levels, quests, and inventory)
-- 🌙 Dark Mode / Night Raid toggle
-- 💼 Experience Arena (Capgemini)
-- 🧪 Project Lab (AI + Full-stack projects)
-- 📬 Contact Chamber (email portal)
+- 🎨 Modern, responsive design with smooth animations
+- 💼 Professional experience showcase
+- 🎓 Education and skills presentation
+- 🧪 Project showcase with detailed descriptions
+- 📬 Contact form with email integration
+- 🌟 Interactive UI elements and transitions
 
 ## 🔗 Links
 
-- [Live Site](https://your-vercel-url.vercel.app)
+- [Live Site](https://amarnathskaushik.com)
 - [LinkedIn](https://www.linkedin.com/in/amarnathskaushik/)
 - [GitHub](https://github.com/Amarnath001)
 
-## 🛠️ Stack
+## 🛠️ Tech Stack
 
-- React + Vite
-- TailwindCSS
-- Framer Motion
-- TypeScript
-- Deployed on Vercel
+- **Frontend Framework**: Next.js 13+
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Deployment**: Vercel
+- **Version Control**: Git
+
+## 🚀 Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/Amarnath001/portfolio.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📝 License
+
+This project is open source and available under the MIT License.
 
