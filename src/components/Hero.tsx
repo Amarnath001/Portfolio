@@ -86,7 +86,7 @@ const Hero = dynamic(() => Promise.resolve(() => {
         <a href="https://github.com/Amarnath001" target="_blank" rel="noopener noreferrer">
           <FaGithub className="w-10 h-10 hover:text-blue-400 transition" />
         </a>
-        <a href="https://linkedin.com/in/amarnathkaushik" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/amarnathskaushik/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="w-10 h-10 hover:text-blue-400 transition" />
         </a>
       </div>
