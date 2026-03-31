@@ -64,6 +64,104 @@ const projects = [
     ],
     github: 'https://github.com/Amarnath001/Logic_Gate_Simulator_CodeHS',
     demo: 'https://www.loom.com/share/1cb9fb42b52a42afb60a5eba5a0e4ac4'
+  },
+  {
+    title: 'PaperMind — Research Intelligence Platform',
+    date: '2025',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Python',
+      'Flask',
+      'PostgreSQL',
+      'pgvector',
+      'Redis',
+      'Celery',
+      'Docker',
+      'RAG'
+    ],
+    details: [
+      'Built a multi-tenant platform for uploading and querying research papers using semantic search and RAG.',
+      'Implemented async pipeline: PDF → chunking → embeddings → retrieval → citation-based answers.',
+      'Designed scalable architecture with pgvector search, background jobs, and workspace-level isolation.'
+    ],
+    github: '',
+    demo: ''
+  },
+  {
+    title: 'SilentSignal — AI Safety Detection System',
+    date: '2025',
+    technologies: [
+      'Python',
+      'FastAPI',
+      'React',
+      'TypeScript',
+      'TailwindCSS',
+      'LLMs'
+    ],
+    details: [
+      'Built a system to detect emotional manipulation and abuse patterns in conversations.',
+      'Combined rule-based logic with LLM reasoning to generate explainable risk scores.',
+      'Developed full-stack app with real-time analysis and structured outputs.'
+    ],
+    github: '',
+    demo: ''
+  },
+  {
+    title: 'MCP Task Planning Agent',
+    date: '2025',
+    technologies: [
+      'Python',
+      'FastAPI',
+      'LLMs',
+      'Agent Systems',
+      'MCP'
+    ],
+    details: [
+      'Built an agent that converts free-form goals into structured tasks, priorities, and execution plans.',
+      'Implemented tool-based pipeline (extract → prioritize → plan) with LLM + rule fallback.',
+      'Designed modular architecture using Model Context Protocol (MCP).'
+    ],
+    github: '',
+    demo: ''
+  },
+  {
+    title: 'RAG Study Helper',
+    date: '2025',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'LangChain',
+      'ChromaDB',
+      'Gemini',
+      'Sentence Transformers'
+    ],
+    details: [
+      'Built a study assistant that answers questions from uploaded documents using RAG.',
+      'Implemented local embeddings + vector search for efficient retrieval.',
+      'Supported Q&A, tutorials, practice questions, and study note generation.'
+    ],
+    github: '',
+    demo: ''
+  },
+  {
+    title: 'OtakuPal — Recommendation Chatbot',
+    date: '2025',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Gemini',
+      'GraphQL',
+      'Prisma',
+      'SQLite'
+    ],
+    details: [
+      'Built a chatbot that recommends anime/manga using user preferences and LLM reasoning.',
+      'Integrated AniList GraphQL API for real-time content retrieval.',
+      'Implemented preference extraction, ranking logic, and conversational memory.'
+    ],
+    github: '',
+    demo: ''
   }
 ];
 
