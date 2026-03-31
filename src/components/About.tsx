@@ -2,38 +2,111 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   const stats = [
-    { label: "Years Experience", value: "2+" },
-    { label: "Projects Completed", value: "10+" }
+    { label: "Years Experience", value: "3+" },
+    { label: "Projects Completed", value: "20+" }
   ];
 
   const skills = [
     {
-      category: 'Programming Languages',
-      items: ['Java', 'Kotlin', 'Python', 'C/C++', 'SQL', 'TypeScript']
+      category: 'Languages',
+      items: ['Python', 'TypeScript', 'Java', 'C/C++', 'SQL', 'JavaScript']
     },
     {
-      category: 'Web & Mobile',
-      items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'React', 'Streamlit', 'Android']
+      category: 'Frontend / Mobile',
+      items: ['React', 'Next.js', 'React Native', 'Expo', 'HTML', 'CSS', 'Tailwind']
     },
     {
-      category: 'Backend & Databases',
-      items: ['Node.js', 'PostgreSQL', 'MySQL']
+      category: 'Backend',
+      items: ['Flask', 'Node.js', 'REST APIs', 'Microservices', 'Supabase']
     },
     {
-      category: 'Cloud',
-      items: ['AWS', 'Firebase']
+      category: 'Databases',
+      items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Supabase']
     },
     {
-      category: 'Machine Learning & AI',
-      items: ['TensorFlow', 'Keras', 'OpenCV']
+      category: 'AI / ML',
+      items: ['LLMs', 'Prompt Engineering', 'NLP', 'Whisper', 'RAG', 'Embeddings']
     },
     {
-      category: 'Version Control & CI/CD',
-      items: ['Git', 'Jenkins']
+      category: 'Cloud & DevOps',
+      items: ['Docker', 'Nginx', 'CI/CD', 'Prometheus', 'Grafana', 'AWS']
+    },
+    {
+      category: 'Tools & Systems',
+      items: ['Git', 'Linux', 'Stripe', 'Firebase', 'Postman']
     }
   ];
 
   const timeline = [
+    {
+      type: 'experience',
+      title: 'Sentari AI',
+      subtitle: 'Full Stack Engineer',
+      location: '',
+      date: 'Summer 2025',
+      details: [
+        'Built a production Flask backend for a voice journaling and emotional intelligence platform, powering transcription, tagging, and analytics pipelines.',
+        'Designed and implemented 20+ REST APIs for workflows including transcription (Whisper), tag analysis, emotion insights, and journaling.',
+        'Developed an end-to-end async pipeline: audio → transcription → analysis → storage → AI-generated responses.',
+        'Integrated Supabase (auth + database) and Stripe subscriptions + usage tracking for production billing flows.',
+        'Built LLM-driven tagging and analysis systems (emotion, intent, cognition classification).',
+        'Deployed scalable services using Docker, Nginx, Prometheus, and Grafana.'
+      ]
+    },
+    {
+      type: 'experience',
+      title: 'Sentari',
+      subtitle: 'Mobile (React Native / iOS)',
+      location: '',
+      date: 'Summer 2025',
+      details: [
+        'Developed a cross-platform voice journaling app using React Native + Expo with real-time recording and transcription.',
+        'Implemented AI-powered features including transcript analysis, tag generation, and “inner voice” responses.',
+        'Built custom hooks and state management for recording, analytics, and history flows.',
+        'Integrated Supabase authentication (OAuth, magic links) and backend APIs across multiple services.'
+      ]
+    },
+    {
+      type: 'experience',
+      title: 'Sentari',
+      subtitle: 'Web Frontend (Next.js)',
+      location: '',
+      date: 'Summer 2025',
+      details: [
+        'Built a production-grade Next.js (App Router) frontend with TypeScript and Tailwind.',
+        'Developed core product features: Record, History, and Insights dashboards with real-time data flows.',
+        'Implemented Stripe subscription flows and paywall logic.',
+        'Designed analytics UI components for emotion trends, energy insights, and behavioral patterns.',
+        'Built scalable frontend architecture using React Context + custom hooks.'
+      ]
+    },
+    {
+      type: 'experience',
+      title: 'Salus Wellness',
+      subtitle: 'Full Stack Engineer',
+      location: '',
+      date: 'Summer 2025',
+      details: [
+        'Contributed to a full-stack wellness platform spanning web, mobile, and backend systems.',
+        'Built backend services for authentication, scheduling, payments (Stripe), and messaging workflows.',
+        'Developed AI-powered coaching features including insights and recommendations.',
+        'Worked within a Turborepo monorepo architecture with shared types, APIs, and schemas.',
+        'Designed real-world workflows for coach–client interactions, bookings, and progress tracking.'
+      ]
+    },
+    {
+      type: 'experience',
+      title: 'HCI Lab',
+      subtitle: 'Research Assistant',
+      location: '',
+      date: 'Summer 2025',
+      details: [
+        'Designed a natural language system to predict user focus intent in YouTube sessions.',
+        'Built a rule-based + prompt-engineered decision system using behavioral heuristics.',
+        'Developed few-shot prompting strategies to improve prediction accuracy.',
+        'Evaluated system performance using structured rule-based analysis and user behavior signals.'
+      ]
+    },
     {
       type: 'experience',
       title: 'Capgemini',

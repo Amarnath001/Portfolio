@@ -92,6 +92,70 @@ const Education = () => {
 const Experience = () => {
   const experiences = [
     {
+      title: 'Full Stack Engineer',
+      company: 'Sentari AI',
+      duration: 'Summer 2025',
+      location: '',
+      description: [
+        'Built a production Flask backend for a voice journaling and emotional intelligence platform, powering transcription, tagging, and analytics pipelines.',
+        'Designed and implemented 20+ REST APIs for workflows including transcription (Whisper), tag analysis, emotion insights, and journaling.',
+        'Developed an end-to-end async pipeline: audio → transcription → analysis → storage → AI-generated responses.',
+        'Integrated Supabase (auth + database) and Stripe subscriptions + usage tracking for production billing flows.',
+        'Built LLM-driven tagging and analysis systems (emotion, intent, cognition classification).',
+        'Deployed scalable services using Docker, Nginx, Prometheus, and Grafana.'
+      ]
+    },
+    {
+      title: 'Mobile (React Native / iOS)',
+      company: 'Sentari',
+      duration: 'Summer 2025',
+      location: '',
+      description: [
+        'Developed a cross-platform voice journaling app using React Native + Expo with real-time recording and transcription.',
+        'Implemented AI-powered features including transcript analysis, tag generation, and “inner voice” responses.',
+        'Built custom hooks and state management for recording, analytics, and history flows.',
+        'Integrated Supabase authentication (OAuth, magic links) and backend APIs across multiple services.'
+      ]
+    },
+    {
+      title: 'Web Frontend (Next.js)',
+      company: 'Sentari',
+      duration: 'Summer 2025',
+      location: '',
+      description: [
+        'Built a production-grade Next.js (App Router) frontend with TypeScript and Tailwind.',
+        'Developed core product features: Record, History, and Insights dashboards with real-time data flows.',
+        'Implemented Stripe subscription flows and paywall logic.',
+        'Designed analytics UI components for emotion trends, energy insights, and behavioral patterns.',
+        'Built scalable frontend architecture using React Context + custom hooks.'
+      ]
+    },
+    {
+      title: 'Full Stack Engineer',
+      company: 'Salus Wellness',
+      duration: 'Summer 2025',
+      location: '',
+      description: [
+        'Contributed to a full-stack wellness platform spanning web, mobile, and backend systems.',
+        'Built backend services for authentication, scheduling, payments (Stripe), and messaging workflows.',
+        'Developed AI-powered coaching features including insights and recommendations.',
+        'Worked within a Turborepo monorepo architecture with shared types, APIs, and schemas.',
+        'Designed real-world workflows for coach–client interactions, bookings, and progress tracking.'
+      ]
+    },
+    {
+      title: 'Research Assistant',
+      company: 'HCI Lab',
+      duration: 'Summer 2025',
+      location: '',
+      description: [
+        'Designed a natural language system to predict user focus intent in YouTube sessions.',
+        'Built a rule-based + prompt-engineered decision system using behavioral heuristics.',
+        'Developed few-shot prompting strategies to improve prediction accuracy.',
+        'Evaluated system performance using structured rule-based analysis and user behavior signals.'
+      ]
+    },
+    {
       title: 'Software Engineer',
       company: 'Capgemini',
       duration: 'Aug 2022 - Jun 2024',
@@ -137,9 +201,9 @@ const Experience = () => {
                 >
                   <h3 className="text-xl font-bold text-blue-400 mb-2">{exp.title}</h3>
                   <p className="text-gray-300 mb-2">{exp.company}</p>
-                  <div className="flex justify-between text-gray-400 mb-4">
+                  <div className="flex flex-wrap justify-between gap-2 text-gray-400 mb-4">
                     <span>{exp.duration}</span>
-                    <span>{exp.location}</span>
+                    {exp.location ? <span>{exp.location}</span> : null}
                   </div>
                   <ul className="list-disc list-inside text-gray-300 space-y-2">
                     {exp.description.map((item, i) => (
